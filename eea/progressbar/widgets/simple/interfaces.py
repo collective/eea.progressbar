@@ -88,9 +88,9 @@ class ISimpleWidgetEdit(IProgressWidgetEdit):
 
     requiredFor = schema.List(
         title=_(u'Required for'),
-        description=_(u"Select workflow states where this will be required"),
+        description=_(u"Select workflow states where this field will be required"),
         required=False,
-        default=[u'all'],
+        default=[u'published'],
         value_type=schema.Choice(
             vocabulary=u"eea.progressbar.vocabulary.WorkflowStates")
     )

@@ -10,3 +10,4 @@ class Edit(EditForm):
     """
     form_fields = Fields(ISimpleWidgetEdit)
     form_fields['states'].custom_widget = MultiCheckBoxVocabularyWidget
+    form_fields['requiredFor'].custom_widget = MultiCheckBoxVocabularyWidget
